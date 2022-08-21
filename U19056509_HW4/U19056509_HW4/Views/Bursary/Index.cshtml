@@ -1,0 +1,30 @@
+﻿@model List<U19056509_HW4.ViewModels.ApplyViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Apply for your Bursary here</h2>
+
+<table style=" width: 100%">
+    <tr>
+        <th>Age</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>bursary Type</th>
+        <th>info</th>
+        <th>Message</th>
+    </tr>
+    @foreach (var apply in Model)
+    {
+        <tr>
+            <td>@apply.Age</td>
+            <td>@apply.Name</td>
+            <td>@apply.Country</td>
+            <td>@apply.Bursary</td>
+            <td>@apply.getinfo()</td>
+            <td>@apply.Message()</td>
+        </tr>
+
+    }
+</table>
+

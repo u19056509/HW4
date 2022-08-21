@@ -1,0 +1,30 @@
+﻿@model List<U19056509_HW4.ViewModels.DonateViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Donate Here</h2>
+
+<table style=" width: 100%">
+    <tr>
+        <th>Age</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>bursary Type</th>
+        <th>Info</th>
+        <th>Message</th>
+    </tr>
+    @foreach (var donate in Model)
+    {
+        <tr>
+            <td>@donate.Age</td>
+            <td>@donate.Name</td>
+            <td>@donate.Country</td>
+            <td>@donate.Amount</td>
+            <td>@donate.getinfo()</td>  
+            <td>@donate.Message()</td>            
+        </tr>
+
+    }
+</table>
+

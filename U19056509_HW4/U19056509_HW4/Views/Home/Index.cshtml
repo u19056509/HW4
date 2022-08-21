@@ -1,0 +1,27 @@
+﻿@using U19056509_HW4.ViewModels
+@model List<Person>
+
+<table style=" width: 100%">
+    <tr>
+        <th>Age</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th></th>
+        <th></th>
+        <th>info</th>
+        <th>Message</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.Age</td>
+            <td>@person.Name</td>
+            <td>@person.Country</td>
+            <td></td>
+            <td></td>
+            <td>@person.getinfo()</td>
+            <td>@person.Message()</td>
+        </tr>
+
+    }
+</table>

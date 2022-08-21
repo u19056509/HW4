@@ -1,0 +1,28 @@
+﻿@model List<U19056509_HW4.ViewModels.TeacherViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Help us by doing volenteer work </h2>
+
+<table style=" width: 100%">
+    <tr>
+        <th>Age</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Years of experince </th>
+        <th>Message</th>
+    </tr>
+    @foreach (var teacher in Model)
+    {
+        <tr>
+            <td>@teacher.Age</td>
+            <td>@teacher.Name</td>
+            <td>@teacher.Country</td>
+            <td>@teacher.Years</td>
+            <td>@teacher.getinfo()</td>
+            <td>@teacher.Message()</td>
+        </tr>
+
+    }
+</table>
