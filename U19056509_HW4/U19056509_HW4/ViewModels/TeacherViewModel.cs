@@ -34,7 +34,7 @@ namespace U19056509_HW4.ViewModels
         }
         public override string Message()
         {
-            return "loves to teach";
+            return "and loves to teach";
         }
 
 

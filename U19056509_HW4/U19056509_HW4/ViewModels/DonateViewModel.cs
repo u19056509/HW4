@@ -34,7 +34,7 @@ namespace U19056509_HW4.ViewModels
         }
         public override string Message()
         {
-           return "Loves to throw their money away";
+           return "and loves to throw their money away";
         }
 
 

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Donate";
+}
+
+<h2>Donate today and help educate </h2>
+@using (Html.BeginForm("DoInsert", "Home", FormMethod.Post))
+{
+    <label>Age</label>
+    <p>@Html.TextBox("Age", null, new { @clas = "form-Control", @type = "number" });</p>
+    <br />
+
+    <label>Full Name</label>
+    <p>@Html.TextBox("Name", null, new { @clas = "form-Control", @type = "text" });</p>
+    <label>Country</label>
+    <p>@Html.TextBox("Country", null, new { @clas = "form-Control", @type = "text" });</p>
+
+    <button type="submit">send in application</button>
+}
+

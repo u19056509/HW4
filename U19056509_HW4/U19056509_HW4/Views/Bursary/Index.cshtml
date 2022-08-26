@@ -11,8 +11,8 @@
         <th>Name</th>
         <th>Country</th>
         <th>bursary Type</th>
-        <th>info</th>
         <th>Message</th>
+
     </tr>
     @foreach (var apply in Model)
     {
@@ -21,8 +21,8 @@
             <td>@apply.Name</td>
             <td>@apply.Country</td>
             <td>@apply.Bursary</td>
-            <td>@apply.getinfo()</td>
-            <td>@apply.Message()</td>
+            <td>@apply.getinfo()  @apply.Message()</td>
+           
         </tr>
 
     }

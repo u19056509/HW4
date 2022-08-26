@@ -1,27 +1,57 @@
 ﻿@using U19056509_HW4.ViewModels
-@model List<Person>
 
-<table style=" width: 100%">
-    <tr>
-        <th>Age</th>
-        <th>Name</th>
-        <th>Country</th>
-        <th></th>
-        <th></th>
-        <th>info</th>
-        <th>Message</th>
-    </tr>
-    @foreach (var person in Model)
-    {
-        <tr>
-            <td>@person.Age</td>
-            <td>@person.Name</td>
-            <td>@person.Country</td>
-            <td></td>
-            <td></td>
-            <td>@person.getinfo()</td>
-            <td>@person.Message()</td>
-        </tr>
+<div>
+    <h1>This is my homework 4 task </h1>
+    <p>This project aims to help the SAEP organisation by brining studendts teachers and donors togeter to solve the education crisis in africa</p>
+    <p>click here to go to the United nations Goals page </p>
+    <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Visit the UN page here</a>
+    <p>my chosen non profit </p>
+    <a href="https://www.saep.org">read more about the non profit </a>
+</div>
 
-    }
-</table>
+<div class="row">
+    <div class="col col-md-4">
+        <h2>Apply</h2>
+        <p>Students looking for Funding need to apply for funding</p>
+        <p>@Html.ActionLink("Apply", "Application", "Home", new { area = "" }, new { @class = "btn btn-primary" })</p>
+    </div>
+
+    <div class="col col-md-4">
+        <h2>Donate</h2>
+        <p>people who would like support this foundation by donating </p>
+        @Html.ActionLink("Donate", "Donate", "Home", new { area = "" }, new { @class = "btn btn-primary" })
+    </div>
+
+    <div class="col col-md-4">
+        <h2>Teach</h2>
+        <p>Volenteers who would like to help teach during gap years ect.</p>
+        @Html.ActionLink("Teach", "Teach", "Home", new { area = "" }, new { @class = "btn btn-primary" })
+    </div>
+
+    <div class="col col-md-4">
+        <h2>Apply Use case</h2>
+        <img src="usecase1.jpg" />
+
+
+    </div>
+    <div class="col col-md-4">
+        <h2>Donate Use case</h2>
+        <img src="U19056509_HW4\usecase1.jpg" />
+
+
+    </div>
+    <div class="col col-md-4">
+        <h2>Teach Use case</h2>
+        <img src="U19056509_HW4\usecase2.jpg" />
+
+    </div>
+    <div class="col col-md-4">
+        <h2>class Diagram</h2>
+        <img src="usecase3.jpg" />
+
+    </div>
+
+
+</div>
+
+

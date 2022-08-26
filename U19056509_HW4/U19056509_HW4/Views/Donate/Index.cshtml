@@ -10,9 +10,9 @@
         <th>Age</th>
         <th>Name</th>
         <th>Country</th>
-        <th>bursary Type</th>
-        <th>Info</th>
+        <th>Pledged Amount</th>
         <th>Message</th>
+
     </tr>
     @foreach (var donate in Model)
     {
@@ -21,8 +21,8 @@
             <td>@donate.Name</td>
             <td>@donate.Country</td>
             <td>@donate.Amount</td>
-            <td>@donate.getinfo()</td>  
-            <td>@donate.Message()</td>            
+            <td>@donate.getinfo() @donate.Message()</td>  
+          
         </tr>
 
     }

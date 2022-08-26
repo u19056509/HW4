@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Application";
+}
+
+<h2>Application form </h2>
+@using (Html.BeginForm("DoInsert", "Home", FormMethod.Post))
+{
+    <label>Age</label>
+    <p>@Html.TextBox("Age", null, new { @clas = "form-Control", @type = "number" });</p><br /> 
+    <label>Full Name</label>
+    <p>@Html.TextBox("Name", null, new { @clas = "form-Control", @type = "text" });</p>
+    <label>Country</label>
+    <p>@Html.TextBox("Country", null, new { @clas = "form-Control", @type = "text" });</p>
+    <label>are you a primary, secondary or tertiary school student ?</label>
+    <p>@Html.TextBox("Primary", null, new { @clas = "form-Control", @type = "text" });</p>
+    <button type="submit">send in application</button>
+}
+
